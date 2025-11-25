@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       // TODO: вставити свою URL веб-апа Google Apps Script тут:
-      const WEB_APP_URL = "YOUR_SCRIPT_WEB_APP_URL";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxOpuR0EF0j-wEczIo8it1-iluTCpuPI-acIGzPPt2qH0Hp8--vo7tR4VM7X6_b9xr6/exec";
 
       try {
         await fetch(WEB_APP_URL, {
