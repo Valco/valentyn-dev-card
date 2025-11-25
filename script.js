@@ -8,7 +8,7 @@ const translations = {
     hero_eyebrow: "Мобільні застосунки • IoT • 3D-друк",
     hero_subtitle: "Розробник мобільних застосунків та IoT-рішень",
     hero_body:
-      "Працюю на перетині мобільної розробки, 3D-друку та електроніки. Створюю застосунки та розумні пристрої з підтримкою світлої та темної теми, які працюють разом як єдина система.",
+      "Працюю на перетині мобільної розробки, 3D-друку та електроніки. Створюю застосунки та розумні пристрої, які працюють разом як єдина система.",
     hero_chip: "Основні напрями",
     hero_item_1: "Мобільні застосунки з бекенд-інтеграціями",
     hero_item_2: "ESP32 / Arduino пристрої з Wi-Fi підключенням",
@@ -70,7 +70,7 @@ const translations = {
     hero_eyebrow: "Mobile apps • IoT • 3D printing",
     hero_subtitle: "Mobile apps & IoT solutions developer",
     hero_body:
-      "I work at the intersection of mobile development, 3D printing and electronics. I build apps and smart devices with both light and dark themes that communicate as a single system.",
+      "I work at the intersection of mobile development, 3D printing and electronics. I build apps and smart devices that communicate as a single system.",
     hero_chip: "Focus areas",
     hero_item_1: "Mobile apps with backend integrations",
     hero_item_2: "ESP32 / Arduino Wi-Fi devices",
@@ -203,8 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Contact form
-  const form = getElementSafe("contact-form");
-  const statusEl = getElementSafe("form-status");
+  const form = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
 
   if (form && statusEl) {
     form.addEventListener("submit", async e => {
@@ -242,7 +242,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-function getElementSafe(id) {
-  return document.getElementById(id);
-}
